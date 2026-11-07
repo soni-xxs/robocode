@@ -1,11 +1,19 @@
 {
   "users": [
     {
+<<<<<<< HEAD
        "id": 11111,
  "name": "Timur",
  "surname": "Halamai",
 "Balnce":1500
     }
 
+=======
+    "id": 1, 
+    "name": "Denys", 
+    "surname": "Lykho",
+    "balance": 1500
+}
+>>>>>>> 2220bc9a8bd03b2fdcd6739f869ada10b648a1b9
   ]
 }
