@@ -1,5 +1,11 @@
 {
   "users": [
-
+    {
+    "id":2,
+    "name":"yarik",
+    "surname":"zchychor",
+    "ghoto_url": "",
+    "balance":1800
+    }
   ]
 }
