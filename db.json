@@ -1,5 +1,13 @@
 {
   "users": [
+    {
+    "id": 1,
+    "name": "Sofia",
+    "surname": "Furmanova",
+    "photo_url": "https://ethnasia.com/cdn/shop/articles/pexels-brett-sayles-992734_edited.jpg?v=1614279222",
+    "balance": 1500
+
+  }
 
   ]
 }
