@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 :root {
@@ -15,6 +16,9 @@
     --text: #ffffff;
     --muted: #888197;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
+>>>>>>> 0a0057be62239ad826d8866016ffb1fc07bf08e0
 
 * {
     margin: 0;
@@ -24,6 +28,7 @@
 
 body {
     min-height: 100vh;
+<<<<<<< HEAD
     background:
         radial-gradient(ellipse at 50% 40%, #21102f 0%, #100a1b 38%, #090611 78%);
     color: var(--text);
@@ -40,10 +45,26 @@ body {
     position: fixed;
     inset: 0;
     overflow: hidden;
+=======
+    background: #090711;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 50% 40%, #36154a55, transparent 45%),
+        radial-gradient(circle at 10% 90%, #8d650c22, transparent 35%);
+>>>>>>> 0a0057be62239ad826d8866016ffb1fc07bf08e0
     pointer-events: none;
     z-index: -1;
 }
 
+<<<<<<< HEAD
 .bg-orb {
     position: absolute;
     width: 450px;
@@ -928,5 +949,520 @@ body {
     *, *::before, *::after {
         animation-duration: .01ms !important;
         transition-duration: .01ms !important;
+=======
+.navbar {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d5a63835;
+    background: #100c19;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #f7d77b;
+}
+
+.logo span {
+    color: #b58aff;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.balance {
+    color: #f8d77c;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+}
+
+.rules-btn {
+    background: transparent;
+    border: 1px solid #b58aff;
+    color: #c6a2ff;
+    padding: 10px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.rules-btn:hover {
+    background: #b58aff;
+    color: #100c19;
+    box-shadow: 0 0 20px #b58aff77;
+}
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 35px 25px 60px;
+}
+
+.game-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.subtitle {
+    color: #c59b4b;
+    font-size: 11px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.game-heading h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(30px, 5vw, 48px);
+    letter-spacing: 5px;
+}
+
+.game-heading h1 span {
+    color: #c39aff;
+    text-shadow: 0 0 25px #a45bff77;
+}
+
+.game-heading p {
+    color: #928a9d;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.poker-table {
+    position: relative;
+    min-height: 470px;
+    border: 12px solid #58351c;
+    border-radius: 220px;
+    background:
+        radial-gradient(ellipse at center, #14744e 0%, #075638 55%, #063a2c 100%);
+    box-shadow:
+        0 0 0 4px #bd8c3b,
+        0 0 0 9px #2c1a13,
+        0 20px 70px #000,
+        inset 0 0 80px #001e16;
+    padding: 35px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.poker-table::before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border: 1px solid #d5b16a66;
+    border-radius: 200px;
+    pointer-events: none;
+}
+
+.table-light {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #ffffff09;
+    filter: blur(70px);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dealer, .player {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dealer {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #f0c66a, #8d551e);
+    border-radius: 50%;
+    color: #28160a;
+    font-size: 23px;
+    box-shadow: 0 0 15px #e7b75b55;
+}
+
+.player-avatar {
+    background: linear-gradient(135deg, #c49aff, #6835a9);
+    color: white;
+}
+
+.player-info h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.player-info span {
+    font-size: 10px;
+    color: #c4c4b9;
+    display: block;
+    margin-top: 5px;
+}
+
+.dealer-cards, .player-cards {
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+}
+
+.playing-card {
+    width: 67px;
+    height: 95px;
+    background: #fffdf8;
+    color: #16121a;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px #0006;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: bold;
+    position: relative;
+    transition: .3s;
+    border: 2px solid #e7e0d4;
+    animation: appear .35s ease backwards;
+}
+
+.playing-card.red {
+    color: #df253c;
+}
+
+.playing-card.back {
+    background: repeating-linear-gradient(45deg, #42206c, #42206c 5px, #6c3ca0 5px, #6c3ca0 10px);
+    border: 3px solid #f0d28b;
+    color: #f8d77c;
+}
+
+.empty-card {
+    width: 67px;
+    height: 95px;
+    border: 2px dashed #ffffff55;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: #ffffff66;
+    font-size: 25px;
+}
+
+.player-cards .playing-card {
+    cursor: pointer;
+}
+
+.player-cards .playing-card:hover {
+    transform: translateY(-8px);
+}
+
+.player-cards .playing-card.selected {
+    transform: translateY(-14px);
+    border: 3px solid #f4d16b;
+    box-shadow: 0 0 18px #f5ce6688;
+}
+
+.table-center {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.pot-label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #d5c9a3;
+}
+
+.pot {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffe09a;
+    font-size: 28px;
+    margin: 8px;
+    text-shadow: 0 0 20px #ffcf60;
+}
+
+.message {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff1bd;
+    margin-top: 12px;
+    text-shadow: 0 0 12px #f9d478;
+}
+
+.round-info {
+    color: #b9d3c1;
+    font-size: 10px;
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+
+.player-chips {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    color: #f8d77c;
+    margin-left: 10px;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.instruction {
+    color: #a9a0b5;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.action-btn {
+    padding: 16px 30px;
+    min-width: 175px;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.deal-btn {
+    color: #241505;
+    background: linear-gradient(135deg, #f6df91, #bd8731);
+    box-shadow: 0 5px 20px #c9973c44;
+}
+
+.draw-btn {
+    background: linear-gradient(135deg, #b58aff, #7843b4);
+    color: white;
+}
+
+.new-btn {
+    border: 1px solid #6e5b82;
+    background: #21182c;
+    color: #d5b8ff;
+}
+
+.action-btn:hover:not(:disabled) {
+    transform: translateY(-4px);
+    filter: brightness(1.15);
+    box-shadow: 0 8px 25px #0006;
+}
+
+.action-btn:disabled {
+    opacity: .35;
+    cursor: not-allowed;
+}
+
+.hand-guide {
+    margin-top: 55px;
+}
+
+.hand-guide h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 17px;
+    letter-spacing: 3px;
+    color: #f0d18a;
+    margin-bottom: 25px;
+}
+
+.rankings {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.rank {
+    min-height: 90px;
+    border: 1px solid #48364e;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #191322, #24152d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: .3s;
+}
+
+.rank:hover {
+    border-color: #d3ae61;
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #c99d4433;
+}
+
+.rank span {
+    color: #e6c16f;
+    font-size: 20px;
+}
+
+.rank b {
+    font-size: 10px;
+}
+
+.rank small {
+    color: #a98bce;
+    font-size: 9px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #000b;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 10;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 430px;
+    background: #171020;
+    border: 1px solid #c59a54;
+    border-radius: 15px;
+    padding: 35px;
+    position: relative;
+    box-shadow: 0 0 50px #a45bff33;
+}
+
+.modal-content h2 {
+    color: #f2d28c;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.modal-content p {
+    color: #ddd2e6;
+    font-size: 13px;
+    line-height: 2.2;
+}
+
+.modal-content .rules-note {
+    color: #b58aff;
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px) rotate(-8deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@media(max-width: 750px) {
+    .poker-table {
+        border-radius: 90px;
+        padding: 35px 15px;
+        min-height: 520px;
+    }
+
+    .poker-table::before {
+        border-radius: 80px;
+    }
+
+    .playing-card, .empty-card {
+        width: 48px;
+        height: 70px;
+        font-size: 21px;
+    }
+
+    .dealer-cards, .player-cards {
+        gap: 5px;
+    }
+
+    .rankings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .balance {
+        font-size: 9px;
+    }
+
+    .rules-btn {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+    .action-btn {
+        width: 100%;
+    }
+
+    .dealer, .player {
+        gap: 7px;
+    }
+
+    .player-chips {
+        margin-left: 0;
+>>>>>>> 0a0057be62239ad826d8866016ffb1fc07bf08e0
     }
 }
