@@ -1,6 +1,7 @@
 {
   "users": [
     {
+<<<<<<< HEAD
     "id": 1,
     "name": "Sofia",
     "surname": "Furmanova",
@@ -18,3 +19,26 @@
     }
   ]
 }
+=======
+      "id": 1,
+      "name": "Denys",
+      "surname": "Lykho",
+      "balance": 1500
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Milk",
+      "price": 1500
+    }
+  ]
+}
+    
+
+    
+
+
+  
+
+>>>>>>> 0d09a09e551da6c26f4b781a7a719c72c8fe705b
