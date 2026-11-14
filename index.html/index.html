@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    
+
+
+    <div class="background-glow"></div>
+
+    <header class="topbar">
+        <div class="logo">
+            <span class="logo-icon">♛</span>
+            <div>
+                <h1>ROYAL SLOTS</h1>
+                <p>LAS VEGAS CASINO</p>
+            </div>
+        </div>
+
+        <div class="top-info">
+            <div class="online-indicator">
+                <span></span> DEMO MODE
+            </div>
+            <div class="coins-display">
+                <span>🪙</span>
+                <strong id="headerBalance">1000</strong>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="welcome">
+            <div class="welcome-line"></div>
+            <p class="welcome-small">WELCOME TO THE ROYAL CASINO</p>
+            <h2>TRY YOUR <span>LUCK</span></h2>
+            <p class="welcome-description">
+                Spin the reels and discover your fortune.
+            </p>
+        </section>
+
+        <section class="casino-layout">
+
+            <div class="machine">
+
+                <div class="machine-top">
+                    <div class="machine-decoration">✦</div>
+                    <h2>♛ ROYAL JACKPOT ♛</h2>
+                    <div class="machine-decoration">✦</div>
+                </div>
+
+                <div class="jackpot-banner">
+                    <span>✧</span>
+                    <div>
+                        <p>GRAND JACKPOT</p>
+                        <strong id="jackpot">10 000</strong>
+                    </div>
+                    <span>✧</span>
+                </div>
+
+                <div class="machine-body">
+
+                    <div class="reels-frame">
+                        <div class="reels" id="reels">
+
+                            <div class="reel" id="reel1">
+                                <div class="symbol">🍒</div>
+                            </div>
+
+                            <div class="reel" id="reel2">
+                                <div class="symbol">⭐</div>
+                            </div>
+
+                            <div class="reel" id="reel3">
+                                <div class="symbol">💎</div>
+                            </div>
+
+                        </div>
+
+                        <div class="win-line"></div>
+                    </div>
+
+                    <div class="result-message" id="resultMessage">
+                        GOOD LUCK!
+                    </div>
+
+                    <div class="machine-controls">
+
+                        <div class="bet-section">
+                            <p class="control-label">YOUR BET</p>
+
+                            <div class="bet-control">
+                                <button id="decreaseBet" class="bet-button">−</button>
+                                <div class="bet-value">
+                                    <span id="betAmount">10</span>
+                                    <small>COINS</small>
+                                </div>
+                                <button id="increaseBet" class="bet-button">+</button>
+                            </div>
+                        </div>
+
+                        <div class="spin-section">
+                            <button id="spinButton" class="spin-button">
+                                <span class="spin-icon">↻</span>
+                                <span>SPIN</span>
+                                <small>GOOD LUCK!</small>
+                            </button>
+                        </div>
+
+                        <div class="bet-section">
+                            <p class="control-label">MAX BET</p>
+                            <button id="maxBet" class="max-button">
+                                MAX BET
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="auto-section">
+                        <button id="autoButton" class="auto-button">
+                            ▶ AUTO SPIN
+                        </button>
+                        <p id="autoStatus">AUTO SPIN: OFF</p>
+                    </div>
+
+                </div>
+
+                <div class="machine-bottom">
+                    <span>★</span>
+                    <p>ROYAL SLOTS · VEGAS EDITION</p>
+                    <span>★</span>
+                </div>
+
+            </div>
+
+            <aside class="sidebar">
+
+                <div class="stat-card balance-card">
+                    <div class="stat-icon">🪙</div>
+                    <div>
+                        <p>YOUR BALANCE</p>
+                        <h3 id="balance">1000</h3>
+                        <small>VIRTUAL COINS</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🎰</div>
+                    <div>
+                        <p>TOTAL SPINS</p>
+                        <h3 id="totalSpins">0</h3>
+                        <small>GAMES PLAYED</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div>
+                        <p>TOTAL WINNINGS</p>
+                        <h3 id="totalWinnings">0</h3>
+                        <small>COINS WON</small>
+                    </div>
+                </div>
+
+                <div class="history-card">
+                    <div class="card-heading">
+                        <h3>WIN HISTORY</h3>
+                        <span>↗</span>
+                    </div>
+
+                    <div id="historyList" class="history-list">
+                        <p class="empty-history">No games yet...</p>
+                    </div>
+                </div>
+
+            </aside>
+
+        </section>
+
+        <section class="paytable-section">
+            <div class="section-heading">
+                <span>✦</span>
+                <h2>PAYTABLE</h2>
+                <span>✦</span>
+            </div>
+
+            <p class="paytable-description">
+                Match symbols and win virtual coins!
+            </p>
+
+            <div class="paytable">
+
+                <div class="pay-item">
+                    <div class="pay-symbols">7️⃣ 7️⃣ 7️⃣</div>
+                    <p>TRIPLE SEVEN</p>
+                    <strong>× 100</strong>
+                </div>
+
+                <div class="pay-item">
+                    <div class="pay-symbols">💎 💎 💎</div>
+                    <p>DIAMONDS</p>
+                    <strong>× 50</strong>
+                </div>
+
+                <div class="pay-item">
+                    <div class="pay-symbols">⭐ ⭐ ⭐</div>
+                    <p>STARS</p>
+                    <strong>× 30</strong>
+                </div>
+
+                <div class="pay-item">
+                    <div class="pay-symbols">🍇 🍇 🍇</div>
+                    <p>GRAPES</p>
+                    <strong>× 20</strong>
+                </div>
+
+                <div class="pay-item">
+                    <div class="pay-symbols">🍉 🍉 🍉</div>
+                    <p>WATERMELONS</p>
+                    <strong>× 15</strong>
+                </div>
+
+                <div class="pay-item">
+                    <div class="pay-symbols">🍋 🍋 🍋</div>
+                    <p>LEMONS</p>
+                    <strong>× 10</strong>
+                </div>
+
+                <div class="pay-item">
+                    <div class="pay-symbols">🍒 🍒 🍒</div>
+                    <p>CHERRIES</p>
+                    <strong>× 5</strong>
+                </div>
+
+                <div class="pay-item bonus-item">
+                    <div class="pay-symbols">🍒 🍒 ⭐</div>
+                    <p>ANY TWO MATCH</p>
+                    <strong>× 2</strong>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>♛ ROYAL SLOTS</p>
+            <span>Entertainment only · Virtual coins · No real money</span>
+        </footer>
+
+<section class="clicker-section">
+
+    <div class="clicker-header">
+        <span>💰</span>
+        <h2>ROYAL MONEY CLICKER</h2>
+        <span>💰</span>
+    </div>
+
+    <p class="clicker-description">
+        Out of coins? Click and earn your fortune!
+    </p>
+
+    <div class="clicker-card">
+
+        <div class="clicker-coins">🪙</div>
+
+        <h3>FREE COINS</h3>
+
+        <div class="clicker-reward">+1</div>
+
+        <p>PER CLICK</p>
+
+        <button id="clickerButton" class="clicker-button">
+            <span>💰</span>
+            CLICK TO EARN
+        </button>
+
+        <div class="clicker-stats">
+            <span>TOTAL CLICKS:</span>
+            <strong id="clickerClicks">0</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+    <div class="win-overlay" id="winOverlay">
+        <div class="win-popup">
+            <div class="win-crown">♛</div>
+            <p class="win-subtitle">CONGRATULATIONS!</p>
+            <h2 id="winTitle">BIG WIN!</h2>
+            <div class="win-amount">
+                +<span id="winAmount">100</span>
+            </div>
+            <p class="win-caption">VIRTUAL COINS</p>
+            <button id="closeWin">CONTINUE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
